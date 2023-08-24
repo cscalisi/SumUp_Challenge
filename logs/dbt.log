@@ -1,0 +1,98 @@
+[0m15:00:22.798399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b61c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b78e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b79650>]}
+
+
+============================== 15:00:22.800965 | 1aed8e16-9b95-47cc-9fe2-2646185a19d7 ==============================
+[0m15:00:22.800965 [info ] [MainThread]: Running with dbt=1.6.0
+[0m15:00:22.801287 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/carloscalisi/.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init su_challenge', 'send_anonymous_usage_stats': 'True'}
+[0m15:00:22.801624 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/Users/carloscalisi/.dbt')}
+[0m15:00:22.801802 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m15:00:22.802334 [debug] [MainThread]: Starter project path: /Users/carloscalisi/Documents/SumUp_takehome_test/dbt-env/lib/python3.11/site-packages/dbt/include/starter_project
+[0m15:00:22.805930 [info ] [MainThread]: 
+Your new dbt project "su_challenge" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:00:22.806125 [info ] [MainThread]: Setting up your profile.
+[0m15:07:22.690501 [info ] [MainThread]: Profile su_challenge written to /Users/carloscalisi/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:07:22.693170 [debug] [MainThread]: Command `dbt init` succeeded at 15:07:22.692770 after 419.92 seconds
+[0m15:07:22.694098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b86a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b87fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104936b10>]}
+[0m15:07:22.694896 [debug] [MainThread]: Flushing usage events
+[0m15:07:31.204742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069d3390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069e1310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069e1b50>]}
+
+
+============================== 15:07:31.207225 | 6ab3c315-4363-4b66-a66c-ea239c58f3d5 ==============================
+[0m15:07:31.207225 [info ] [MainThread]: Running with dbt=1.6.0
+[0m15:07:31.207546 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/Users/carloscalisi/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:07:31.207891 [info ] [MainThread]: dbt version: 1.6.0
+[0m15:07:31.208060 [info ] [MainThread]: python version: 3.11.4
+[0m15:07:31.208216 [info ] [MainThread]: python path: /Users/carloscalisi/Documents/SumUp_takehome_test/dbt-env/bin/python3.11
+[0m15:07:31.208360 [info ] [MainThread]: os info: macOS-13.5-arm64-arm-64bit
+[0m15:07:31.378522 [info ] [MainThread]: Using profiles dir at /Users/carloscalisi/.dbt
+[0m15:07:31.378785 [info ] [MainThread]: Using profiles.yml file at /Users/carloscalisi/.dbt/profiles.yml
+[0m15:07:31.378936 [info ] [MainThread]: Using dbt_project.yml file at /Users/carloscalisi/Documents/SumUp_takehome_test/dbt_project.yml
+[0m15:07:31.379287 [info ] [MainThread]: adapter type: bigquery
+[0m15:07:31.379424 [info ] [MainThread]: adapter version: 1.6.2
+[0m15:07:31.379561 [info ] [MainThread]: Configuration:
+[0m15:07:31.379690 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:07:31.379814 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:07:31.379937 [info ] [MainThread]: Required dependencies:
+[0m15:07:31.380091 [debug] [MainThread]: Executing "git --help"
+[0m15:07:31.397960 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:07:31.398519 [debug] [MainThread]: STDERR: "b''"
+[0m15:07:31.398699 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:07:31.398852 [info ] [MainThread]: Connection:
+[0m15:07:31.399046 [info ] [MainThread]:   method: oauth
+[0m15:07:31.399172 [info ] [MainThread]:   database: sumup-take-home-test
+[0m15:07:31.399291 [info ] [MainThread]:   execution_project: sumup-take-home-test
+[0m15:07:31.399411 [info ] [MainThread]:   schema: dbt_sumup
+[0m15:07:31.399529 [info ] [MainThread]:   location: US
+[0m15:07:31.399644 [info ] [MainThread]:   priority: interactive
+[0m15:07:31.399775 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m15:07:31.399894 [info ] [MainThread]:   impersonate_service_account: None
+[0m15:07:31.400011 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m15:07:31.400124 [info ] [MainThread]:   job_retries: 1
+[0m15:07:31.400239 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m15:07:31.400354 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m15:07:31.400466 [info ] [MainThread]:   keyfile: None
+[0m15:07:31.400582 [info ] [MainThread]:   keyfile_json: None
+[0m15:07:31.400696 [info ] [MainThread]:   timeout_seconds: 300
+[0m15:07:31.400809 [info ] [MainThread]:   token: None
+[0m15:07:31.400922 [info ] [MainThread]:   refresh_token: None
+[0m15:07:31.401034 [info ] [MainThread]:   client_id: None
+[0m15:07:31.401145 [info ] [MainThread]:   client_secret: None
+[0m15:07:31.401257 [info ] [MainThread]:   token_uri: None
+[0m15:07:31.401369 [info ] [MainThread]:   dataproc_region: None
+[0m15:07:31.401480 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m15:07:31.401605 [info ] [MainThread]:   gcs_bucket: None
+[0m15:07:31.401715 [info ] [MainThread]:   dataproc_batch: None
+[0m15:07:31.401925 [info ] [MainThread]: Registered adapter: bigquery=1.6.2
+[0m15:07:31.406612 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m15:07:31.407439 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:07:37.415372 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery client: 'Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+  '
+[0m15:07:37.417265 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m15:07:37.417789 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:07:37.418184 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/carloscalisi/Documents/SumUp_takehome_test/dbt_project.yml> not found
+
+[0m15:07:37.420143 [debug] [MainThread]: Command `dbt debug` failed at 15:07:37.419668 after 6.23 seconds
+[0m15:07:37.421227 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:07:37.422133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10353ad50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069e1f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10263e6d0>]}
+[0m15:07:37.423046 [debug] [MainThread]: Flushing usage events
