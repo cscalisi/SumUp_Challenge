@@ -1,6 +1,7 @@
-{{ config(
-    materialized = 'view',
-    tag = 'stores')
+{{ 
+ config(
+    tag = 'stores'
+  )
 }}
 
 SELECT
@@ -12,11 +13,8 @@ SELECT
     SUM(t.amount) AS transacted_amount
 FROM
     {{ref('device')}} as d
-    -- `sumup-take-home-test.dbt_sumup_source_data.device` AS d
     INNER JOIN {{ref('transaction')}} AS t ON d.id = t.device_id
     LEFT JOIN {{ref('store')}} AS s ON s.id = d.store_id
-    -- INNER JOIN `dbt_sumup_source_data.transaction` AS t ON d.id = t.device_id
-    -- LEFT JOIN `dbt_sumup_source_data.store` AS s ON s.id = d.store_id
 GROUP BY
     1,
     2,
