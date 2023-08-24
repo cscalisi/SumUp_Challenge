@@ -1,0 +1,71 @@
+version: 2
+
+seeds:
+  - name: device
+    description: Table containing a list of devices that belong to our stores
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+        description: Primary key for this table
+      - name: type
+        description: Type of device the store has, takes values 1 to 5
+      - name: store_id
+        description: Unique ID identifying a specific store that is a SumUp customer
+
+  - name: store
+    description: Table containing a list of stores, with name, address and other information. Any SumUp customer can have more than one store
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+        description: Primary key for this table
+      - name: name
+        description: Name of the store
+      - name: address
+        description: Address of the store
+      - name: city
+        description: City where the store is located
+      - name: country
+        description: Country where the store is located
+      - name: created_at
+        description: This column stores the timestamp of the store's addition to our records
+      - name: typology
+        description: Type of business, e.g. florist, restaurant, beauty salon
+      - name: customer_id
+        description: Unique ID for SumUp's customers. This column is not unique, since any SumUp customer can own more than one store
+
+  - name: transaction
+    description: Table containing a list of transactions processed by SumUp, that is, a payment made using SumUp's devices. These are transactions made to pay for products sold inside the stores belonging to SumUp's customers
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+        description: Primary key for this table
+      - name: device_id
+        description: Unique ID for the device that processed this transaction
+      - name: product_name
+        description: Product sold as part of this transaction
+      - name: product_sku
+        description: SKU (stock keeping unit) for the product sold as part of this transaction
+      - name: category_name
+        description: Category the product sold belongs to
+      - name: amount
+        description: Amount in EUR transacted 
+      - name: status
+        description: Final transaction status, one of "accepted", "cancelled" or "refused"
+      - name: card_number
+        meta:
+          sensitive: true
+        description: Full payment card number used for this transaction
+      - name: cvv
+        meta:
+          sensitive: true
+        description: CVV (card verification value) of the card used for this transaction
+      - name: created_at
+        description: This column stores the timestamp of the store's addition to our records
+      - name: happened_at
+        description: This column stores the timestamp the transaction occurred at
