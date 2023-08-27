@@ -1,6 +1,6 @@
 {{ 
  config(
-    tag = 'stores'
+    tags = 'stores'
   )
 }}
 
