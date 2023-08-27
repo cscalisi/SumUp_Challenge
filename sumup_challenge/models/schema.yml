@@ -1,0 +1,66 @@
+version: 2
+
+models:
+  - name: avg_txn_amount_store_country
+    description: This table contains the average transacted amount per store typology and country. All time values, no time filters
+    columns:
+    - name: typology
+      description: Type of merchant store
+    - name: country
+      description: Country the store at hand operates in
+    - name: avg_txn_amount
+      description: Average transaction amount for combination of typology and country of stores
+
+  - name: share_sales_device
+    description: This table contains a breakdown of transaction counts by the type of device that processed them
+    columns:
+    - name: device_type
+      description: ID for the type of device that processed the transaction
+      tests:
+        - unique
+        - not_null
+    - name: pct_sales
+      description: Percentage of all sales processed by device type at hand
+
+  - name: time_to_five_txn
+    description: This table contains two versions of the same metric, the average time it takes for a store to reach 5 transactions since its onboarding with SumUp
+    columns:
+    - name: avg_time_to_five_txn
+      description: Average time in days between the fifth transaction and the store creation in SumUp's databases. The transaction timestamp is for when the transaction occured
+    - name: avg_time_to_five_txn_alt
+      description: Average time in days between the fifth transaction and the store creation in SumUp's databases. The transaction timestamp is for when the transaction was written to SumUp's database
+
+  - name: top_ten_products
+    description: This table contains a list of the best selling ten products across all stores belonging to SumUp's customers
+    columns:
+      - name: product_name
+        description: Name of the product at hand
+        tests:
+          - unique
+          - not_null
+      - name: product_sku
+        description: SKU (stock keeping unit) of the product at hand
+        tests:
+          - unique
+          - not_null
+      - name: no_transactions
+        description: Count of transactions for product at hand. All time numbers
+
+  - name: top_ten_stores
+    description: This table contains information on the 10 stores that processed the highest volumes of transaction with SumUp's devices
+    columns:
+      - name: store_id
+        description: Integer ID for the store at hand
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: Name of the store at hand
+      - name: city
+        description: City where the store is located
+      - name: country
+        description: Country where the store is located
+      - name: typology
+        description: Type of merchant store
+      - name: transacted_amount
+        description: Total transaction volume in EUR
