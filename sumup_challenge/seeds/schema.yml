@@ -16,6 +16,9 @@ seeds:
 
   - name: store
     description: Table containing a list of stores, with name, address and other information. Any SumUp customer can have more than one store
+    config:
+      column_types:
+        created_at: timestamp
     columns:
       - name: id
         tests:
@@ -39,6 +42,10 @@ seeds:
 
   - name: transaction
     description: Table containing a list of transactions processed by SumUp, that is, a payment made using SumUp's devices. These are transactions made to pay for products sold inside the stores belonging to SumUp's customers
+    config:
+      column_types:
+        created_at: timestamp
+        happened_at: timestamp
     columns:
       - name: id
         tests:

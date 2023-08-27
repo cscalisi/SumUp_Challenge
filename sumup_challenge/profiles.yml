@@ -1,4 +1,4 @@
-su_challenge:
+sumup_challenge:
   outputs:
     dev:
       dataset: dbt_sumup
