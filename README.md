@@ -10,4 +10,12 @@ I chose Google BigQuery because I previously worked with it and it integrates we
 
 ## Data preparation
 
-I was given 3 `.xlsx` files as raw data sources. The easiest and fastest way to surface these in any data warehouse with dbt is to create **seed** data objects. Those are static tables that are created by simply dropping `.csv` files in the appropriate folder
+I was given 3 `.xlsx` files as raw data sources. The easiest and fastest way to surface these in any data warehouse with dbt is to create **seed** data objects. Those are static tables that are created by simply dropping `.csv` files in the appropriate folder and dbt will create a table, automatically inferring data types based on the data stored in the files. 
+
+This procedure works *most of the time* and it almost did in this use case, except for one instance. The timestamp columns in `transaction` and `store` were recognized as `text` fields. In order to answer the last question, I had to work with full timestamp objects and so I had to overwrite dbt's guess at a data type.
+Before exporting the `.xslx` files to `.csv` using spreadsheet software, I converted the timestamp columns to the following format: `YYYY-MM-DD HH:mm:ss`. This was necessary in order to cast these 3 columns as `TIMESTAMP`, since that's the pattern dbt expects. Abstracting away from the current situation and thinking of running these operations at scale, we could perform them through some fairly straightforward data manipulation in Python, e.g. as an operator part of an Airflow DAG.
+
+Some manual cleaning up in the spreadsheet had to be done also on the `product_sku` column, which was reported in scientific format. This little bug was probably induced by the fact that the file was opened and saved by spreadsheet software, which occasionally does that. In the context of a full-blown ETL solution, this type of problem should not surface, since files are only moved and manipulated in the background and never visualized through spreadsheet software.
+
+
+### Data quality checks
