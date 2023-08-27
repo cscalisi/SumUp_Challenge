@@ -3,7 +3,7 @@ sumup_challenge:
     dev:
       dataset: dbt_sumup
       job_execution_timeout_seconds: 300
-      keyfile: /usr/app/creds/sumup-take-home-test-account-creds.json
+      keyfile: creds/sumup-take-home-test-account-creds.json
       job_retries: 1
       location: US
       method: service-account
