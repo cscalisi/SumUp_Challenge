@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "sumup-take-home-test",
+  "private_key_id": "bf0b0cd0a6d8d27bba259c4e8ec5e8e426325ef4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC8SaSyt6pJWimy\nZk5g255oFnywx6Qi+9gGW/3hx27x2stusKweW+2UNQxaS1zfsCj4wuLu2rBVXlGn\naGi9V7XiRCXWRmkVuwRmX0hJwRTTzIeFUYYKIidVLGMz1QfdWrHAhM9SOxe7OsIu\nl7EGiamftjetknuID0x9dCW+QlrYLJ3HQ+VL8FDm+lBPHIZ8YfUizNRYiKsLk4bx\nrGYncfj+IWSSA8+HxPsLFwokMued9MdbavclqnvL3x/dicYczq9p0KHfBn392zG+\nQWS23Amz/FpZaI+zEv8Jykwrs16Z/5xjSYGeN43RslcpqeEI0ijrFNOeT9/Rw6YP\nZh7u8zIxAgMBAAECggEABpRP85EGi7hBZl8L8HdiJVbaUfLS8+g/GedJY4QklsHP\ni6FTrV6m2k/BfA7/un8JSnqEY6ZrhJsmcSotRUcBJ3w8Qnzcv440utdL40xie/1s\n06I38+cSPugdeg5gz0nD1fNqG3BuTYwBxK8nJ+Bj941ObCO3CnfG42gdaMTgr+at\nU7k5TUYIMIZ4y0ovnNRqXlC7b7AwrI6OVUpKgIHnR34pP9FgQXd7MUDAe3NdO21S\na5bbF4opBvLDf3mVEw45zvmvVsfWAI7uud+qCrah6wcGHemy27+ga6Ij+V2bedik\nlNOCrVqZFQVksv2kQY4E7S+7Cve4EwFO7VQd8XLTgQKBgQDtO+JABFRlf80Sd2Wd\nDMWHADLxgiZjVPEurcGFPyWzSY7q4/82JEZvpKF+vBXRTapy6/mIeVdLpsQIOPF/\nVTzt7TahcamhqNUgpnxyg+FcRIwZNroClY7I0rMFLNC/14CWM8XSbHbJoOiA+yR+\nh+dRm81azhGOUS1vLM6Hau0SgQKBgQDLLpI/03WqGU5H7FPYIM4I3zeP27NcwC/t\nw1y1UaPf4PHGYA2hujb9Zas9M+mBO85nFfYeG2uc9TGDAIKOZ+bXVvGmVJikbB12\nHxGXve6uOlbJJVRX7KVmlUPTmHGpq9MzfaoYzn87MFnbZI2WaCdTu+QWm2iarxix\nGGYcC9fnsQKBgHcgI/t7cRnKtCJ6vBbBzAp/ahVmAnrMs5N6Avwy+m5uGIsQ1B3O\n12PGaqXmMpp4gofUwOfr7o75feSXG4WSOtdKz60AE2svCV6s2z7xxF99uFAM8BjO\nGvXy/5wwpd4/i71g4AxLFNcoqrfh5LB49ApBzzuy0JQDZWo3OLo9UjCBAoGBAJW2\n/FcBlws+2FrQ/jsceRU6fbOIPRMUHn0BXnfQ74LROvZk4saP82MmnlZbwSzUB9QX\n76HhrJscZV5Vat5KG2QDkc5xOYS2kcLvQ8RfVNeW70oKMqsTGhGL3U22X9KZZOfl\nKghbaI8RorSx1E7G8muV4Izz+NE6QmSESQFTjMURAoGBAKQeKH1Jzrfe7rXOrurJ\nFOtUaBrjyd3tWD1G1WFZ1mtphMmiT7fRXTtZ3P4bQXg/UkdwzNEjYqjaKyAWV4O1\npT3vkoYS2LS4cwaAJxYE+IpAowjCfoGUkC4PiL6depI10E7wz2D1qhqhO1+KCJqI\n6yskteXJJKgvQ9miK6gFLe71\n-----END PRIVATE KEY-----\n",
+  "client_email": "dbt-user-sumup@sumup-take-home-test.iam.gserviceaccount.com",
+  "client_id": "107862768196263868068",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dbt-user-sumup%40sumup-take-home-test.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
