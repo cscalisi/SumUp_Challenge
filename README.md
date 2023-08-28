@@ -14,7 +14,8 @@ I chose Google BigQuery because I previously worked with it and it integrates we
 
 ## Get started
 
-I went with a simple Dockerization for this project. I have put some sample dbt commands wrapped in `docker run` statements in the shell script `docker_build.sh`. Please replace the absolute paths in the `bind` options with the appropriate paths for where you downloaded this repo to and for the `profiles.yml` within it.
+I went with a simple Dockerization for this project. I have put some sample dbt commands wrapped in `docker run` statements in the shell script `docker_build.sh`. 
+Make sure to have Docker installed on your machine in order to be able to run the instructions below. Please replace the absolute paths in the `bind` options with the appropriate paths for where you downloaded this repo to and for the `profiles.yml` within it.
 
 If you want to execute all of the commands, simply run:
 
