@@ -37,8 +37,13 @@ RUN python -m pip install --upgrade pip setuptools wheel --no-cache-dir
 WORKDIR /app/
 ENTRYPOINT ["dbt"]
 
+# Copy dbt profile
+COPY profiles.yml /root/.dbt/profiles.yml
+
 # Copy source code
 COPY . /app
+
+COPY seeds/device.csv /app/seeds/device.csv
 
 # Install dbt-bigquery python package
 FROM base as dbt-bigquery
