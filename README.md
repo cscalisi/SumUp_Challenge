@@ -20,6 +20,7 @@ Make sure to have Docker installed on your machine in order to be able to run th
 If you want to execute all of the commands, simply run:
 
 ```shell
+cd sumup_challenge
 sh docker_build.sh
 ```
 This will download a Docker image with the dbt BigQuery adapter and build a container that runs all seed and models part of this project and finally pushes to port 8080 the dbt docs webpage. Access it at `http://localhost:8080/`. 
